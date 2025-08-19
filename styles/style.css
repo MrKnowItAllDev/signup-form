@@ -1,0 +1,112 @@
+:root {
+    /* Font styling */
+    --input-text: #111827;
+    --btn-color: #111111;
+    --btn-text: #FFFFFF;
+    --screen-bg: #f7f8f8;
+    --placeholder-text: #9CA3AF;
+    --link-text: #2563EB;
+    --hover-text: #1D4ED8;
+
+    /* Layout styling */
+    --modal-width: 900px;
+    --modal-height: 650px;
+    --input-margin: 12px;
+    --border-radius: 14px;
+    --line-height: 18px;
+    --input-border: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter","Roboto", "Helvetica Neue", sans-serif;
+    line-height: var(--line-height);
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--screen-bg);
+}
+
+#modal {
+    display: flex;
+    width: var(--modal-width);
+    height: var(--modal-height);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#modal > .img-section {
+    width: 50%;
+}
+
+#modal > .img-section > img {
+    width: 100%;
+    height: 100%;
+}
+
+#modal > .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 24px;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 22px;
+}
+
+input {
+    border: 1px solid var(--input-border);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.form-header {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 0;
+}
+
+.btn {
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.account {
+    padding: 12px 0;
+    text-align: center;
+}
+
+input[placeholder] {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.reference {
+    margin-top: 24px;
+}
+
+/* Yes, I have labels, but the form looks better without them */
+/* I'm keeping them for two reasons, 1. too lazy to remove them, 2. I'm too lazy */
+label {
+    display: none;
+}
